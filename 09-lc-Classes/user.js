@@ -19,7 +19,7 @@ export class User extends Array {
 		this.lastName = lastName;
 
 		// this дає доступ до всіх частин класу
-		console.log('this', this);
+		// console.log('this', this);
 	}
 
 	// Methods

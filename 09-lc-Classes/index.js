@@ -43,10 +43,12 @@ function getTopStudent(students) {
 }
 
 // examples
-
 const student1 = new Student(1, 'Alice', 'Johnson', 'Math', 85);
 const student2 = new Student(2, 'Bob', 'Smith', 'Physics', 92);
-console.log(getTopStudent([student1, student2]));
+const student3 = new Student(3, 'Carol', 'Williams', 'Chemistry', 78);
+
+const students = [student1, student2, student3];
+console.log(getTopStudent(students));
 
 // !Клас даэ можливість контролювати поля - isActive, ніхто не змінить, ми можем зчитати і змінити через сеттер... якщо заберем сеттер то ніхто не змінить
 
