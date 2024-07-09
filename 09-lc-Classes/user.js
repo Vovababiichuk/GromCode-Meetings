@@ -7,13 +7,12 @@
 
 // класи розширюють можливості звичайних обьектів
 
-export class User extends Array {
+export class User {
 	// Properties
 	#isAdmin = false;
 	
 	// Constructor
 	constructor(id, firstName, lastName) {
-		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
