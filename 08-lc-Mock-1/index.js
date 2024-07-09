@@ -75,14 +75,14 @@
 
 // ===========Task 4 ===================
 
-// // input: name
-// // output: list book [{}]
+// input: name
+// output: list book [{}]
 
-// // algo
+// algo
 
-// // 1. iteration arr
-// // 2. if count > 0 output obj
-// // 3. output with obj title
+// 1. iteration arr
+// 2. if count > 0 output obj
+// 3. output with obj title
 
 // const booksStorage = [
 // 	{
@@ -117,18 +117,17 @@
 // 	},
 // ]
 
-// /**
-//  * @param {string} author
-//  * @return {object[]}
-//  */
 // function getAvailableBooks(author) {
-// 	return booksStorage.filter(el => el.booksCount > 0).map(el => {
-// 		const newObj = {};
-// 		newObj.author = el.author;
-// 		newObj.title = el.title;
-// 		return newObj
-// 	})
-
+// 	return booksStorage
+// 		.filter(book =>
+// 			author
+// 				? author === book.author && book.booksCount > 0
+// 				: book.booksCount > 0
+// 		)
+// 		.map(prop => ({
+// 			title: prop.title,
+// 			author: prop.author,
+// 		}))
 // }
 
 // // examples
