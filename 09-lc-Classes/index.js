@@ -63,7 +63,7 @@ const students = [student1, student2, student3];
 console.log(getTopStudent(students));
 
 student1.points = 95;
-console.log(getTopStudent(students)); 
+console.log(getTopStudent(students));
 
 student1.setIsActive = false;
 console.log(getTopStudent(students));
